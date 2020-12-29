@@ -40,7 +40,10 @@ export default class Main {
             width: 1450,
             height: 800,
             frame: false,
-            show: false
+            show: false,
+            webPreferences: {
+                nodeIntegration: true
+            }
         };
 
         Main.MainWindow = new BrowserWindow(mainOpts);
