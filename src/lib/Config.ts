@@ -5,7 +5,7 @@ import cloneDeep = require("lodash.clonedeep");
 import { IConfigLogging, IConfigSystem, IConfig } from "./typings/config";
 
 const isMain = (process && process.type !== "renderer");
-const app = (isMain) ? require("electron").app : require("electron").remote.app;
+const app = (isMain) ? require("electron").app : require("@electron/remote").app;
 
 const defaultConfigPath: string = path.join(app.getAppPath(), "config", "default.json");
 

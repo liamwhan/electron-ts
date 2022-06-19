@@ -1,4 +1,5 @@
-import { ipcRenderer, remote } from "electron";
+import { ipcRenderer } from "electron";
+import * as remote from "@electron/remote";
 import * as log from "electron-log";
 import IPCEventType from "./Channels";
 import { KeyState } from "./InputState";

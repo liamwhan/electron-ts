@@ -29,6 +29,7 @@
   "author": "Liam Whan",
   "license": "MIT",
   "devDependencies": {
+    "@electron/remote": "^2.0.8",
     "@types/bootstrap": "^4.5.1",
     "@types/jquery": "^3.5.5",
     "@types/lodash.clonedeep": "^4.5.3",

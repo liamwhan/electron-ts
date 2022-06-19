@@ -42,7 +42,11 @@ export default class Main {
             frame: false,
             show: false,
             webPreferences: {
-                nodeIntegration: true
+                nodeIntegration: true,
+                nodeIntegrationInWorker: true,
+                nodeIntegrationInSubFrames: true,
+                enableRemoteModule: true,
+                contextIsolation: false
             }
         };
 
